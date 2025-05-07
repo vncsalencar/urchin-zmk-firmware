@@ -43,12 +43,27 @@
         // both left thumb keys
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
+
+        esc_combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         // Base alpha layer
+
+        base {
+            bindings = <
+&kp Q  &kp W  &kp F  &kp P        &kp B      &kp J        &kp L            &kp U      &kp Y       &kp APOS
+&kp A  &kp R  &kp S  &kp T        &kp G      &kp M        &kp N            &kp E      &kp I       &kp O
+&kp Z  &kp X  &kp C  &kp D        &kp V      &kp K        &kp H            &kp COMMA  &kp PERIOD  &kp SLASH
+                     &lt 2 SPACE  &lt 3 TAB  &lt 4 ENTER  &lt 5 BACKSPACE
+            >;
+        };
 
         media {
             bindings = <
