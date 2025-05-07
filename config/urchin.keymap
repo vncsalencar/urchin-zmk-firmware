@@ -58,10 +58,10 @@
 
         base {
             bindings = <
-&kp Q  &kp W  &kp F  &kp P        &kp B      &kp J        &kp L            &kp U      &kp Y       &kp APOS
-&kp A  &kp R  &kp S  &kp T        &kp G      &kp M        &kp N            &kp E      &kp I       &kp O
-&kp Z  &kp X  &kp C  &kp D        &kp V      &kp K        &kp H            &kp COMMA  &kp PERIOD  &kp SLASH
-                     &lt 2 SPACE  &lt 3 TAB  &lt 4 ENTER  &lt 5 BACKSPACE
+&kp Q           &kp W           &kp F               &kp P             &kp B      &kp J        &kp L              &kp U                &kp Y            &kp APOS
+&mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G      &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O
+&lt 7 Z         &kp X           &kp C               &kp D             &kp V      &kp K        &kp H              &kp COMMA            &kp PERIOD       &lt 7 SLASH
+                                                    &lt 2 SPACE       &lt 3 TAB  &lt 4 ENTER  &lt 5 BACKSPACE
             >;
         };
 
