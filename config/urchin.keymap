@@ -46,7 +46,7 @@
 
         esc_combo {
             bindings = <&kp ESCAPE>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
             layers = <0>;
         };
     };
