@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HRM_APOSTROPHE";
             #binding-cells = <0>;
-            bindings = <&kp APOSTROPHE>, <&kp RIGHT_GUI>;
+            bindings = <&kp APOSTROPHE>, <&kp DOUBLE_QUOTES>;
         };
     };
 
