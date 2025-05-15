@@ -91,6 +91,13 @@
             #binding-cells = <0>;
             bindings = <&kp APOSTROPHE>, <&kp DOUBLE_QUOTES>;
         };
+
+        esc_behaviour: esc_behaviour {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESC_BEHAVIOUR";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp ESCAPE>;
+        };
     };
 
     macros {
@@ -106,12 +113,6 @@
         // both left thumb keys
         // left index & middle fingers (home-row)
         // hold control & space for Adobe workflow
-
-        esc_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 9>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -121,7 +122,7 @@
 
         base {
             bindings = <
-&kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y        &kp U              &kp I                &kp O            &lt 7 P
+&esc_behaviour  &kp W           &kp E               &kp R             &kp T        &kp Y        &kp U              &kp I                &kp O            &lt 7 P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI APOSTROPHE
 &lt 7 Z         &kp X           &kp C               &kp V             &kp B        &kp N        &kp M              &kp COMMA            &kp PERIOD       &question_mark
                                                     &lt 2 TAB         &lt 3 SPACE  &lt 4 ENTER  &lt 5 BACKSPACE
