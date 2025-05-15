@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "QUESTION_MARK";
             #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp QUESTION>;
+            bindings = <&kp SLASH>, <&kp QUESTION>, <&kp COLON>;
         };
 
         hrm_a: hrm_a {
@@ -124,7 +124,7 @@
             bindings = <
 &esc_behaviour  &kp W           &kp E               &kp R             &kp T        &kp Y        &kp U              &kp I                &kp O            &lt 7 P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI APOSTROPHE
-&lt 7 Z         &kp X           &kp C               &kp V             &kp B        &kp N        &kp M              &kp COMMA            &kp PERIOD       &question_mark
+&lt 7 Z         &lt 1 X         &kp C               &kp V             &kp B        &kp N        &kp M              &kp COMMA            &lt 6 PERIOD     &question_mark
                                                     &lt 2 TAB         &lt 3 SPACE  &lt 4 ENTER  &lt 5 BACKSPACE
             >;
         };
@@ -200,17 +200,5 @@
         // Used to change the keyboard's settings.media {};
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        media_layer_combo {
-            if-layers = <2 3>;
-            then-layer = <1>;
-        };
-
-        fun_layer_combo {
-            if-layers = <4 5>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
